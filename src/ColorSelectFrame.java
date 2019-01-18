@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
@@ -27,33 +28,10 @@ public class ColorSelectFrame extends JFrame {
 	public ColorSelectFrame(){
 		
 		super("ColorSelect");
-		setLayout(new BorderLayout());
+		setLayout(new FlowLayout());
 		
-		norte = new JPanel();
-		sul = new JPanel();
 		
-		add(norte, BorderLayout.NORTH);
-		add(sul, BorderLayout.CENTER);
 		
-		norte.setLayout(new BorderLayout());
-		sul.setLayout(new GridLayout(2, 2));
-		
-		cores = new JComboBox<String>(nomeCores);
-		cores.setMaximumRowCount(2);
-		
-		norte.add(cores, BorderLayout.NORTH);
-		
-		checkBackground = new JCheckBox("Background");
-		checkForeground = new JCheckBox("Foreground");
-		
-		sul.add(checkBackground);
-		sul.add(checkForeground);
-		
-		botaoOk = new JButton("Ok");
-		botaoCancelar = new JButton("Cancelar");
-		
-		sul.add(botaoOk);
-		sul.add(botaoCancelar);
 	}
 	
 }
