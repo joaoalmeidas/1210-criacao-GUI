@@ -12,6 +12,7 @@ public class ColorSelectFrame extends JFrame {
 	
 	private final JComboBox<String> cores;
 	
+	/*
 	private final JCheckBox checkBackground;
 	private final JCheckBox checkForeground;
 	
@@ -22,15 +23,19 @@ public class ColorSelectFrame extends JFrame {
 	
 	private final JPanel norte;
 	private final JPanel sul;
+	*/
 	
 	private final String[] nomeCores = {"Vermelho", "Azul", "Verde"};
+	
 	
 	public ColorSelectFrame(){
 		
 		super("ColorSelect");
-		setLayout(new FlowLayout());
+		setLayout(new BorderLayout());
 		
+		cores = new JComboBox<String>(nomeCores);
 		
+		add(cores, BorderLayout.NORTH);
 		
 	}
 	
