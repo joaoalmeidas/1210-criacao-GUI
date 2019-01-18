@@ -19,11 +19,11 @@ public class ColorSelectFrame extends JFrame {
 	
 	private final JButton botaoOk;
 	private final JButton botaoCancelar;
-	
+	*/
 	
 	private final JPanel norte;
 	private final JPanel sul;
-	*/
+
 	
 	private final String[] nomeCores = {"Vermelho", "Azul", "Verde"};
 	
@@ -33,9 +33,17 @@ public class ColorSelectFrame extends JFrame {
 		super("ColorSelect");
 		setLayout(new BorderLayout());
 		
+		norte = new JPanel();
+		sul = new JPanel();
+		
+		norte.setLayout(new BorderLayout());
+		sul.setLayout(new FlowLayout());
+		
 		cores = new JComboBox<String>(nomeCores);
 		
 		add(cores, BorderLayout.NORTH);
+		
+		
 		
 	}
 	
