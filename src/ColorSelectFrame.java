@@ -51,10 +51,10 @@ public class ColorSelectFrame extends JFrame {
 		checkBackground = new JCheckBox("Background");
 		checkForeground = new JCheckBox("Foreground");
 		
-		sul.add(checkBackground);
-		sul.add(checkForeground);
+		centro.add(checkBackground);
+		centro.add(checkForeground);
 		
-		add(centro);
+		add(centro, BorderLayout.CENTER);
 		
 		botaoOk = new JButton("Ok");
 		botaoCancelar = new JButton("Cancelar");
@@ -62,7 +62,7 @@ public class ColorSelectFrame extends JFrame {
 		sul.add(botaoOk);
 		sul.add(botaoCancelar);
 		
-		add(sul);
+		add(sul, BorderLayout.SOUTH);
 	}
 	
 }
